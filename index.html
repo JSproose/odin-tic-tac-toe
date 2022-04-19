@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <div>Tic Tac Toe</div>
+    </header>
+    <div class="start-screen">
+        <form action="#">
+            <div class="players">
+                <div class="player1-form">
+                    <input type="text" name="player1" id="player1" placeholder="Player 1 Name" required>
+                    <div class="pick-tic">
+                        <input type="radio" name="player1Tick" id="player1-X" value="x" required>
+                        <label class="radio-styling" for="player1-X">X</label>
+                        <input type="radio" name="player1Tick" id="player1-O" value="o">
+                        <label class="radio-styling" for="player1-O">O</label>
+                    </div>
+                </div>
+                <div class="player2-form">
+                    <input type="text" name="player2" id="player2" placeholder="Player 2 Name" required>
+                    <div class="pick-tic">
+                        <input type="radio" name="player2Tick" id="player2-X" value="x" required>
+                        <label class="radio-styling" for="player2-X">X</label>
+                        <input type="radio" name="player2Tick" id="player2-O" value="o">
+                        <label class="radio-styling" for="player2-O">O</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+    <div class="game-over">
+        <h1>Jasper Wins!</h1>
+        <div class="replay"><i class="material-icons">replay</i></div>
+    </div>
+    <div class="content">
+        <div class="scoreboard">
+            <div class="scoreboard player1">
+                <h1></h1>
+            </div>
+            <div class="scores">0  :  0</div>
+            <div class="scoreboard player2">
+                <h1></h1>
+            </div>
+        </div>
+        <div class="board">
+        </div>
+    </div>
+</body>
+</html>
