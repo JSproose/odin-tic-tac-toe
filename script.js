@@ -114,8 +114,10 @@ const DisplayController = (function() {
                 } else {
                     if (player1.tic == winner) {
                         player1.score = player1.score + 1;
+                        console.log('p1')
                     } else {
                         player2.score = player2.score + 1;
+                        console.log('p2')
                     }
                     updateScore(player1.score, player2.score);
                     GameBoard.clearBoard();
